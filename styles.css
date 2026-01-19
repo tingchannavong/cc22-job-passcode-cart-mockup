@@ -55,13 +55,15 @@ body {
 }
 /* CART AREA */
 .my-cart-container{
-    background-color: lightblue;
     width: 90%;
     height: 80%;
     margin: 20px auto;
 }
+.my-cart-container h1 {
+    font-size: 25px;
+}
 .card-area {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     height: 95%;
     width: 100%;
     display: flex;
@@ -74,28 +76,32 @@ body {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
+
 .item-card-box{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     height: 50%;
-}
-.trash-box {
-    height: 50px;
-    width: 50px;
-    border: 1px lightgreen solid;
-    border-radius: 50%;
-    align-items: center;
+
 }
 #trash {
-    color: lightgreen;
-    font-size: 35px;
+    color: lightseagreen;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
     text-align: center;
-    padding: 5px 0 0 5px;
 }
+
 .item-box {
-    background-color: blue;
+    background-color: aliceblue;
     height: 100%;
     width: 30%;
 }
@@ -109,9 +115,13 @@ body {
     border-radius: 50%;
     background-color: lightgreen;
 }
+.info-box {
+    width: 50%;
+    padding-inline: 10px;
+}
 /* PAYMENT AREA */
 .payment-container {
-    background-color: lightgoldenrodyellow;
+    background-color: white;
     width: 50%;
     height: 75%;
     margin: 20px 0;
@@ -122,6 +132,14 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
+.payment-container h2 {
+    font-size: 15px;
+}
+.price-line p {
+    font-size: 10px;
+    color: grey;
+}
+
 .item-card-box {
     background-color: white;
     border-radius: 10px;
@@ -133,5 +151,47 @@ body {
 .promo-area {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid grey;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+input {
+    padding: 5px;
+    width: 60%;
+    border: 1px grey solid;
+    border-radius: 5px;
+    font-size: 10px;
+}
+#discount {
+    color: lightseagreen;
+}
+.promo-area button {
+    width: 30%;
+    padding: 5px;
+    color: lightseagreen;
+    border-radius: 10px;
+    border: 2px solid lightseagreen;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+}
+.total-text {
+    color: black !important;
+    font-weight: bold !important;
+}
+.price-text {
+    color: lightseagreen !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+}
+.payment-container > button {
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: lightseagreen;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
 }
