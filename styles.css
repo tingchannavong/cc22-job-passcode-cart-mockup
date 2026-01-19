@@ -86,6 +86,7 @@ body {
     width: 100%;
     height: 50%;
     gap: 10px;
+    overflow: auto;
 }
 #trash {
     color: lightseagreen;
@@ -98,7 +99,7 @@ body {
     align-items: center;
     font-size: 15px;
     text-align: center;
-    margin-left: 10px;
+    margin-inline: 15px 10px;
 }
 .item-box {
     background-color: rgb(0, 157, 255);
@@ -110,6 +111,7 @@ body {
     width: 300px;
     padding: 40px 10px 40px 10px;
     border-radius: 10px;
+    overflow: hidden;
 }
 .item-header {
     color: white;
@@ -130,19 +132,39 @@ body {
 }
 .info-box {
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding-inline: 10px;
 }
 .level-area {
     display: flex;
-    justify-content: space-between;
+    gap: 5px;
 }
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-color: lightgreen;
+    margin-block: auto;
+    background-color: lightseagreen;
 }
-
+select {
+    border: none;
+    color: grey;
+}
+select:hover {
+    border: 1px solid lightseagreen;
+    border-radius: 5px;
+}
+option {
+    font-weight: bold;
+    color: green;
+}
+.price-left {
+    font-size: 12px;
+    color: grey;
+    font-weight: bold;
+}
 /* PAYMENT AREA */
 .payment-container {
     background-color: white;
