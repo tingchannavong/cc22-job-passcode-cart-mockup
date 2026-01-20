@@ -133,11 +133,12 @@ body {
     width: 35%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding-inline: 10px;
 }
 .info-box > p:first-child {
     font-size: 1.5em;
+    color: rgb(77, 75, 75);
 }
 .price-left {
     font-size: 1em;
@@ -181,6 +182,7 @@ option {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    overflow: auto;
 }
 .payment-container h2 {
     font-size: 1.6em;
